@@ -1,3 +1,3 @@
 var burgerEditorObject = require("../config/orm");
 
-//createBurger();
+burgerEditorObject.createBurger("Gremlin");
