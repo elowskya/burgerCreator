@@ -5,17 +5,15 @@ var connection = require("./connection");
 //      * `insertOne()`
 //      * `updateOne()`
 
-function afterConnection() {
+function selectAll() {
     connection.query("SELECT * FROM burgers", function(err, res) {
       if (err) throw err;
-      console.log("i am reading this file");
-      createBurger();
+      console.log("selectAll has been executed");
           });
   }
 
   function createBurger() {
-    console.log("Inserting a new burger...\n");
-    console.log(connection);
+       console.log(connection);
     connection.query(
       "INSERT INTO burgers SET ?",
       {
@@ -23,9 +21,24 @@ function afterConnection() {
       },
       function(err, res) {
         console.log(res.affectedRows + "burger inserted!\n");
-        // Call updateBurgers AFTER the INSERT completes
-       // updateBurgers();
-      }
+             }
     );
     }
-  createBurger();
+    function updateBurger() {
+      //console.log("Updating all burger quantities...\n");
+      connection.query(
+        "UPDATE burgers SET ? WHERE ?",
+        [
+          {
+            devoured: 1
+          },
+          {
+           burger_name: "Classic"
+          }
+        ],
+        function(err, res) {
+          console.log(res.affectedRows + " burgers updated!\n");
+                 }
+      );
+            }
+    updateBurger();
