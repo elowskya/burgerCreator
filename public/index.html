@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <h1>Add your Burger Request</h1>
+      <h3>We love burgers and will make one to your specifications!</h3>
+      <h3>Please add your order below and click submit!</h3>
+      <form>
+        <div>
+          <label for="uname">Burger Order </label>
+          <input type="text" id="burgerOrder" name="burgerName" />
+        </div>
+        <div><button id="submitButton">Submit</button></div>
+      </form>
+
+      <div>
+        <h3>Glad you loved your burger!</h3>
+        <h3>
+          Click on the "Loved it!" button to let us know that we should add this
+          to our new menu!
+        </h3>
+      </div>
+    </div>
+    <script>
+      $(document).ready(() => {
+        $("#submitButton").on("click", event=> {
+          event.preventDefault();
+          const $burgerOrder = $("#burgerOrder").val().trim();
+          console.log($burgerOrder);
+    
+          $.ajax({ url: "./api/burgers", method: "POST",data:{burger_name: $burgerOrder} })
+            .then(data => {
+              console.log(data);
+            })
+            .catch(err => console.log("ERROR", err));
+        });
+      });
+    </script>
+  </body>
+</html>
