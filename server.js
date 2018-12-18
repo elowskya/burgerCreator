@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended:false}))
 app.use(express.json())
 app.use(express.static(path.join(__dirname, "./public")))
 
-require("./public/home.html")(app);
+require("./routing/homehtmlRoute")(app);
 
 app.post("/api/burgers",(req, res, next) => {
     return burgersController.createBurger(req.body)
