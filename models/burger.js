@@ -1,10 +1,12 @@
 var connection = require("../config/connection");
 
 const burgerModel = {
-    getBurgers: () => {
-        connection.query("SELECT * FROM burgers", function (err, res) {
-            if (err) throw err;
-            console.log("selectAll has been executed");
+    getBurgers: (cb) => {
+        return connection.query("SELECT * FROM burgers", function (err, res) {
+            if (err) {
+                cb(err,{})
+            }
+            return cb(null,res)
         });
     },
     createNewBurger: (burgerInput) => {

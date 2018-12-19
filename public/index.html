@@ -31,10 +31,20 @@
           Click on the "Loved it!" button to let us know that we should add this
           to our new menu!
         </h3>
+        <div id="burgerDevoured"></div>
       </div>
     </div>
     <script>
       $(document).ready(() => {
+       $.ajax({url: "./api/burgers", method: "GET"})
+       .then(burgerDatabase=> {
+         console.log(burgerDatabase);
+         console.log("the database has loaded");
+         //var $burgerDatabase = $("burgerDatabase").val();
+         //$("#burgerDevoured").append(content);
+       })
+       
+       
         $("#submitButton").on("click", event=> {
           event.preventDefault();
           const $burgerOrder = $("#burgerOrder").val().trim();

@@ -7,8 +7,8 @@ var burgerModel = require("../models/burger")
 
 var burgerController = {
 
-    selectAll: function () {
-        burgerModel.getBurgers();
+    selectAll: function (cb) {
+       return burgerModel.getBurgers(cb);
     },
 
     createBurger: (newBurger) => {
