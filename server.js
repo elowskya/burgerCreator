@@ -1,11 +1,11 @@
 const express = require("express");
 const path = require("path");
 const port = process.env.PORT || 5060;
-const favicon = require("serve-favicon");
+// const favicon = require("serve-favicon");
 const app = express();
-const bodyParser = require("body-parser");
 
 const burgersController = require("./controllers/burgers_controller")
+
 app.use(express.urlencoded({
     extended: false
 }))
@@ -40,8 +40,6 @@ app.use((err, req, res, next) => {
     console.log(err)
     return res.status(500).send("internal server error");
 })
-
-
 
 app.listen(port, function () {
     console.log("app listening on http://localhost:" + port);
