@@ -1,11 +1,9 @@
-# burgerCreator
+BURGER CREATOR APP
 
-Burger Creator is a restaurant app that lets users input the names of burgers they'd like to eat.
+Burger Creator App will allows people to order custom burgers to be made fresh and ready to order.
 
-- Whenever a user submits a burger's name, the burger will be stored in the burger_database.
+-Burger Creator uses HTML, CSS, & Bootstrap for the Frontend & MySql for the database, & is served with Express.
 
-  _Todo_ Setup the `main.handlebars` file so it's able to be used by Handlebars.
+To run this app, simply npm init to install relevant packages and use "npm start" to initialize the app.
 
-  _Todo_ Setup the `index.handlebars` to have the template that Handlebars can render onto.
-
-  _Todo_ Create a button in `index.handlebars` that will submit the user input into the database.
+Published site available at https://immense-island-22576.herokuapp.com/
