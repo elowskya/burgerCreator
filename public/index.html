@@ -12,23 +12,26 @@
 
 <body>
   <div class="container">
+    <div class="title">
     <h1>Add your Burger Request</h1>
     <h3>We love burgers and will make one to your specifications!</h3>
     <h3>Please add your order below and click submit!</h3>
+  </div>
+  <div class="orderForm">
     <form>
       <div>
-        <label for="uname">Burger Order </label>
+        <label for="name">Burger Order </label>
         <input type="text" id="burgerOrder" name="burgerName" />
       </div>
       <div><button id="submitButton">Submit</button></div>
     </form>
-
+  </div>
     <div>
       <h3>Glad you loved your burger!</h3>
-      <h3>
+      <h5>
         Click on the "Loved it!" button to let us know that we should add this
         to our new menu!
-      </h3>
+      </h5>
       <div id="burgerDevoured"></div>
     </div>
   </div>

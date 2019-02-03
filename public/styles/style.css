@@ -3,3 +3,15 @@
     height: 100vh;
     background-color: brown;
 }
+
+.title {
+    text-align: center;
+    font-family: cursive;
+    font-weight: bold;
+    margin: 10%;
+    padding: 3%;
+}
+
+.orderForm {
+    text-align: center;
+}
