@@ -1,8 +1,18 @@
+.container {
+    background-color: #E7E7E7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 /* Style the header with a red background and some padding */
 .header {
     overflow: hidden;
-    background-color: #C91823;
+    /* background-color: #5A2328; */
     padding: 20px 10px;
+    /* background-color: #2E1114; */
+    background-color: #8E0909;
   }
 
   .header img {
@@ -58,8 +68,11 @@
       font-family: cursive;
       color: white;
       background-color: black;
+      padding: 1%;
+      margin: 1%;
+      background-image: url(../images/burger2.jpeg);
+      background-repeat: repeat-y;
   }
-
 
   /* slide show */
   * {box-sizing: border-box;}
@@ -115,4 +128,21 @@ img {vertical-align: middle;}
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
+}
+
+section {
+    color: white;
+    background-color: black;
+    padding: 3%;
+    font-family: cursive;
+    line-height: 1.75;
+    text-align: center;
+}
+
+.customizedBurger {
+    color: white;
+    margin: 1% 0 1% 0;
+    background-image: url(../images/chefPreparation.jpeg);
+    background-repeat: no-repeat;
+    padding: 2%;
 }

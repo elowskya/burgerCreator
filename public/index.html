@@ -6,50 +6,51 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>Home</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./reset.css"/>
-  <link rel="stylesheet" href="./css/style.css"/>
+  <link rel="stylesheet" href="./css/style.css" />
+  <link rel="stylesheet" href="./css/style.css" />
 </head>
 
 <body>
   <div class="header">
-          <img src="./images/burger.jpeg" class="logo"/>
-          <div class="header-right">
-            <a class="active" href="#home">Home</a>
-            <a href="#contact">Contact</a>
-            <a href="#about">About</a>
-          </div>
-          </div>  
-<!-- timed slideshow with images -->
-<div class="fabiansTitle">
-<h1>Fabian's Fabulous Burgers</h1>
-<p>A classy burger & pizza joint</p>
-</div>
+    <img src="./images/burger.jpeg" class="logo" />
+    <div class="header-right">
+      <a class="active" href="#home">Home</a>
+      <a href="#contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
+  <div class="container">
+    <div class="fabiansTitle">
+      <h1>Fabian's Fabulous Burgers</h1>
+      <p>A classy burger & pizza joint</p>
+    </div>
+    <!-- timed slideshow with images -->
 
-<div class="slideshow-container">
+    <div class="slideshow-container">
 
-<div class="mySlides fade">
-  <img src="./images/woodenTable.jpg" style="text-align:center">
-</div>
+      <div class="mySlides fade">
+        <img src="./images/woodenTable.jpg" style="text-align:center">
+      </div>
 
-<div class="mySlides fade" style="text-align:center">
-  <img src="./images/chefPreparation.jpeg">
-</div>
+      <div class="mySlides fade" style="text-align:center">
+        <img src="./images/chefPreparation.jpeg">
+      </div>
 
-<div class="mySlides fade" style="text-align:center">
-  <img src="./images/pizza.jpg">
-</div>
+      <div class="mySlides fade" style="text-align:center">
+        <img src="./images/pizza.jpg">
+      </div>
 
-</div>
-<br>
+    </div>
+    <br>
 
-<div style="text-align:center">
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-  <span class="dot"></span> 
-</div>
+    <div style="text-align:center">
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
 
-<script>
-var slideIndex = 0;
+    <script>
+      var slideIndex = 0;
 showSlides();
 
 function showSlides() {
@@ -71,37 +72,29 @@ function showSlides() {
 </script>
 
 
+    <!-- about section explaining the websites purpose -->
+    <section>
+      <h3>Fabian's Fabulous Burgers began with a group of friends who loved getting together and cooking
+        quality burgers and hosting gatherings for neighborhood events. Passion, friendship, & an entreprenual spirit
+        were just the right ingredients to kick off Fabian's.
+      </h3>
+    </section>
 
+    <section class="customizedBurger">
+      <h1>Burger Hall of Fame</h1>
+      <h3>We love burgers and if you think we should add another to our menu</h3>
+      <h3>Just type in below and click submit!</h3>
 
-
-
-
-
-
-  <div class="container">
-    <div class="title">
-    <h1>Add your Burger Request</h1>
-    <h3>We love burgers and will make one to your specifications!</h3>
-    <h3>Please add your order below and click submit!</h3>
-  </div>
-  <div class="orderForm">
-    <form>
-      <div>
-        <label for="name">Burger Order </label>
+      <form>
+        <!-- <label for="name">Burger Order </label> -->
         <input type="text" id="burgerOrder" name="burgerName" />
-      </div>
-      <div><button id="submitButton">Submit</button></div>
-    </form>
-  </div>
-    <div>
-      <h3>Glad you loved your burger!</h3>
-      <h5>
-        Click on the "Loved it!" button to let us know that we should add this
-        to our new menu!
-      </h5>
+        <button id="submitButton">Submit</button>
+      </form>
       <div id="burgerDevoured"></div>
-    </div>
+    </section>
   </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
   <script>
     $(document).ready(() => {
       $.ajax({
@@ -136,7 +129,5 @@ function showSlides() {
     });
   </script>
 </body>
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-  crossorigin="anonymous"></script>
 
 </html>
