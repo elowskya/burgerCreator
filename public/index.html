@@ -23,7 +23,7 @@
     <h1>Fabian's Fabulous Burgers</h1>
     <p>A classy burger & pizza joint</p>
   </div>
-  <div class="container">
+  <!-- <div class="container"> -->
     <div class="row">
       <!-- about section explaining the websites purpose -->
       <section class="col-md-4">
@@ -35,18 +35,24 @@
         </h3>
       </section>
 
-      <div class="col-md-8">
+      <!-- <div class="col-md-8 indexImages">
         <img src="./images/woodenTable.jpg">
-      </div>
-
-
+      </div> -->
+      <div class="card col-md-4">
+          <img src="./images/woodenTable.jpg" class="card-img-top" alt="restaurant">
+          <div class="card-body">
+            <p class="card-text">Every day we bring in fresh local ingredients.</p>
+          </div>
+        </div>
     </div>
+
+    
 
     <div class="row">
       <section class="col-md-12 customizedBurger">
         <h1>Burger Hall of Fame</h1>
-        <h3>We love burgers and if you think we should add another to our menu</h3>
-        <h3>Just type in below and click submit!</h3>
+        <h4 style="text-align:center">We love burgers and if you think we should add another to our menu</h3>
+        <h4 style="text-align:center">Just type in below and click submit!</h3>
 
         <form>
           <input type="text" id="burgerOrder" name="burgerName" />
@@ -55,7 +61,7 @@
         <div id="burgerDevoured"></div>
       </section>
     </div>
-  </div>
+  <!-- </div> -->
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
     crossorigin="anonymous"></script>
 

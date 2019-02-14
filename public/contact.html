@@ -14,7 +14,7 @@
 
 <body>
   <div class="header" id="fabiansTitle">
-    <img src="./images/burger.jpeg" class="logo" />
+    <!-- <img src="./images/burger.jpeg" class="logo" /> -->
     <div class="header-right">
       <a class="active" href="/">Home</a>
       <a href="./about.html">About</a>
@@ -23,9 +23,44 @@
     <h1>Fabian's Fabulous Burgers</h1>
     <p>A classy burger & pizza joint</p>
   </div>
-  <div class="container">
+  <!-- <div class="row"> -->
+  <div class="contactContainer col-md-6">
+    <form>
+      <!-- <div class="form-row"> -->
+        <div class="col-md-4 mb-3">
+          <label for="validationDefault01">Your Name</label>
+          <input type="text" class="form-control" id="validationDefault01" placeholder="Your Name" value=""
+            required>
+        </div>
 
+        <div class="col-md-4 mb-3">
+          <label for="validationDefaultUsername">Your Email</label>
+          <div class="input-group">
+         
+            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Your Email"
+             required>
+          </div>
+         
+        </div>
 
+        <div class="col-md-4 mb-3">
+            <label for="validationDefaultText">Burger Love</label>
+            <div class="textarea">
+           
+              <input type="textarea" class="form-control" id="validationDefaultText" placeholder="Burger Love"
+               required>
+            </div>
+           
+          </div>
+        <!-- </div> -->
+        
+        
+      </form>
+      <button class="btn btn-primary" type="submit">Submit form</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
 
 </body>
 

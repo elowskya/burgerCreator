@@ -112,3 +112,30 @@ section {
     background-repeat: no-repeat;
     padding: 2%;
 }
+
+.contactContainer {
+  background-color: lightgray;
+  padding: 2%;
+  text-align: center;
+}
+
+.form-control {
+  text-align: center;
+  position: center;
+}
+
+.indexImages {
+  background-color: blue;
+  padding: 2%;
+}
+
+p {
+  font-family: cursive;
+  text-align: center;
+  color: white;
+  padding: 2%;
+}
+
+.card-body {
+  background-color: black;
+}
