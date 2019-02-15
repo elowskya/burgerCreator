@@ -87,7 +87,7 @@
     background-size: cover;
 }
 
-section {
+.section {
     color: white;
     background-color: black;
     padding: 3%;
@@ -107,21 +107,19 @@ section {
 
 .customizedBurger {
     color: white;
+    background-color: black;
     margin: 1% 0 1% 0;
     background-image: url(../images/chefPreparation.jpeg);
     background-repeat: no-repeat;
     padding: 2%;
+    text-align: center;
+    font-family: cursive;
 }
 
 .contactContainer {
   background-color: lightgray;
   padding: 2%;
   text-align: center;
-}
-
-.form-control {
-  text-align: center;
-  position: center;
 }
 
 .indexImages {
@@ -138,4 +136,30 @@ p {
 
 .card-body {
   background-color: black;
+}
+
+.indexMenuCard {
+  background-color: black;
+  color: white;
+  font-family: cursive;
+  text-align: center;
+  padding: 3%;
+
+}
+
+.indexMenuCard h1 {
+  font-size: 5vh;
+  font-weight: 600;
+}
+
+.indexMenuDescription {
+  font-style: italic;
+  line-height: 2;
+}
+
+.menuButton {
+  background-color: white;
+  width: 20vw;
+  text-align-last: center;
+  
 }

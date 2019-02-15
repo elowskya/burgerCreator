@@ -1,0 +1,38 @@
+.menuContainer {
+    background-color: black;
+    color: white;
+    line-height: 2;
+    text-align: left;
+}
+.menuTitle {
+    text-align: center;
+    /* background-color: black; */
+    font-family: cursive;
+    color: white;
+    padding: 2%;
+}
+
+.menuSubtitle {
+    text-align: center;
+    font-family: cursive;
+    /* padding: 1%; */
+    /* margin-top: 2%; */
+    background-color: black;
+    color: white;
+}
+
+.menuHorizontalLine {
+    width: auto;
+    height: 2px;
+    background-color: white;
+    align-content: center;
+    margin: 2%;
+}
+
+.menu {
+    padding-left: 2%;
+}
+
+.menuDescription {
+    font-style: italic;
+}
