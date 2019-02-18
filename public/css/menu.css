@@ -16,7 +16,7 @@
 
 .menuSubtitle {
     text-align: center;
-    font-family: cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     /* padding: 1%; */
     /* margin-top: 2%; */
     background-color: black;
@@ -37,5 +37,5 @@
 
 .menuDescription {
     font-style: italic;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }

@@ -91,7 +91,7 @@
     color: white;
     background-color: black;
     padding: 3%;
-    font-family: cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     line-height: 1.75;
     text-align: center;
     font-size: 5vh;
@@ -114,7 +114,7 @@
     background-repeat: no-repeat;
     padding: 2%;
     text-align: center;
-    font-family: cursive;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .contactContainer {
@@ -125,7 +125,7 @@
 }
 
 .contactUsTitle {
-  font-family: cursive;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 10vh;
 }
 
@@ -146,13 +146,13 @@ p {
 }
 
 .card-text {
-  font-family: cursive;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   font-size: 3vh;
 }
 .indexMenuCard {
   background-color: black;
   color: white;
-  font-family: cursive;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
   padding: 3%;
 
@@ -165,7 +165,7 @@ p {
 
 .indexMenuDescription {
   font-style: italic;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   line-height: 2;
 }
 
