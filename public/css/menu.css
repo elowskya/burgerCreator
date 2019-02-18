@@ -3,6 +3,8 @@
     color: white;
     line-height: 2;
     text-align: left;
+    margin-top: 1%;
+    padding: 0 7% 0 7%;
 }
 .menuTitle {
     text-align: center;
@@ -35,4 +37,5 @@
 
 .menuDescription {
     font-style: italic;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

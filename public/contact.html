@@ -17,50 +17,78 @@
     <!-- <img src="./images/burger.jpeg" class="logo" /> -->
     <div class="header-right">
       <a class="active" href="/">Home</a>
-      <a href="./about.html">About</a>
+      <a href="./menu.html">Menu</a>
       <a href="./contact.html">Contact</a>
     </div>
     <h1>Fabian's Fabulous Burgers</h1>
-    <p>A classy burger & pizza joint</p>
+    <p>A classy burger joint</p>
   </div>
-  <!-- <div class="row"> -->
-  <div class="contactContainer col-md-6">
-    <form>
-      <!-- <div class="form-row"> -->
-        <div class="col-md-6 mb-3">
-          <label for="validationDefault01">Your Name</label>
-          <input type="text" class="form-control" id="validationDefault01" placeholder="Your Name" value=""
-            required>
-        </div>
 
-        <div class="col-md-4 mb-3">
-          <label for="validationDefaultUsername">Your Email</label>
-          <div class="input-group">
-         
-            <input type="text" class="form-control" id="validationDefaultUsername" placeholder="Your Email"
-             required>
-          </div>
-         
-        </div>
-
-        <div class="col-md-4 mb-3">
-            <label for="validationDefaultText">Comments</label>
-            <div class="textarea">
-           
-              <input type="textarea" class="form-control" id="validationDefaultText" placeholder="Burger Love"
-               required>
+  <div class="row contactContainer">
+    <div class="contactUsTitle">Connect with us!</div>
+    <div class="col-md-12 contactForm">
+      <form class="needs-validation" novalidate>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+            <label for="validationCustom01">Your Name</label>
+            <input type="text" class="form-control" id="validationCustom01" placeholder="Name" value="" required>
+            <div class="valid-feedback">
+              Looks good!
             </div>
-           
           </div>
-        <!-- </div> -->
+         
+          <div class="col-md-12 mb-3">
+            <label for="validationCustomUsername">Your Email</label>
+            <div class="input-group">
+              <input type="email" class="form-control" id="validationCustomUsername" placeholder="Email" aria-describedby="inputGroupPrepend" required>
+              <div class="invalid-feedback">
+                Please include your email.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-12 mb-3">
+          
+            <textarea class="form-control" id="validationCustom03" cols="30" rows="10" placeholder="Your comments here" required></textarea>
+            <!-- <input type="textarea" class="form-control" id="validationCustom03" placeholder="Burger Love" required> -->
+            <div class="invalid-feedback">
+              Please give us some feedback.
+            </div>
+          </div>
         
         
+        </div>
+       
+        <button class="btn btn-primary" type="submit">Submit form</button>
       </form>
-      <button class="btn btn-primary" type="submit">Submit form</button>
+      
+      <script>
+      (function() {
+        'use strict';
+        window.addEventListener('load', function() {
+          // Fetch all the forms we want to apply custom Bootstrap validation styles to
+          var forms = document.getElementsByClassName('needs-validation');
+          // Loop over them and prevent submission
+          var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+              if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+              }
+              form.classList.add('was-validated');
+            }, false);
+          });
+        }, false);
+      })();
+      </script>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"></script>
+  
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
 
 </body>
 

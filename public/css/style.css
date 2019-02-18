@@ -4,7 +4,7 @@
   color: white;
   background-color: black;
   padding: 1%;
-  margin: 0 0 1% 0;
+  /* margin: 0 0 1% 0; */
   background-image: url(../images/burger2.jpeg);
   background-repeat: no-repeat;
 }
@@ -46,7 +46,7 @@
 .active {
   background-color: #717171;
 }
-/* Float the link section to the right */
+
 .header-right {
   float: right;
 }
@@ -79,12 +79,12 @@
 }
 
 
-.container {
-    background-color: #E7E7E7;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.indexContainer {
+ margin: 1%;
+}
+
+.bottomRow {
+  margin-top: 1%;
 }
 
 .section {
@@ -94,7 +94,8 @@
     font-family: cursive;
     line-height: 1.75;
     text-align: center;
-    /* margin: 2%; */
+    font-size: 5vh;
+
 }
 
 .horizontalLine {
@@ -102,13 +103,13 @@
   height: 2px;
   background-color: white;
   align-content: center;
-  margin: 8%;
+  margin: 6%;
 }
 
 .customizedBurger {
     color: white;
     background-color: black;
-    margin: 1% 0 1% 0;
+    /* margin: 1% 0 1% 0; */
     background-image: url(../images/chefPreparation.jpeg);
     background-repeat: no-repeat;
     padding: 2%;
@@ -117,9 +118,15 @@
 }
 
 .contactContainer {
-  background-color: lightgray;
-  padding: 2%;
-  text-align: center;
+  background-color: #F6F5F1;
+  padding: 1% 20% 0 20%;
+  /* text-align: center; */
+
+}
+
+.contactUsTitle {
+  font-family: cursive;
+  font-size: 10vh;
 }
 
 .indexImages {
@@ -138,6 +145,10 @@ p {
   background-color: black;
 }
 
+.card-text {
+  font-family: cursive;
+  font-size: 3vh;
+}
 .indexMenuCard {
   background-color: black;
   color: white;
@@ -154,6 +165,7 @@ p {
 
 .indexMenuDescription {
   font-style: italic;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   line-height: 2;
 }
 
