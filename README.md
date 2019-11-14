@@ -1,9 +1,19 @@
-BURGER CREATOR APP
+<h1>BURGER CREATOR APP</h1>
+<img src="public/images/screenGrab.PNG">
 
-Burger Creator App will allows people to order custom burgers to be made fresh and ready to order.
+<h2>DESCRIPTION</h2>
 
--Burger Creator uses HTML, CSS, & Bootstrap for the Frontend & MySql for the database, & is served with Express.
+<p>Features front end of a restaurant.</p>
 
-To run this app, simply npm init to install relevant packages and use "npm start" to initialize the app.
+<h3>TECHNOLOGIES USED</h3>
+<ul>
+<li>Bootstrap</li>
+<li>MySql</li>
+<li>Express</li>
+</ul>
 
-Published site available at https://immense-island-22576.herokuapp.com/
+<h3>INSTALLATION</h3>
+<p>npm init to install relevant packages and use "npm start" to initialize the app.</p>
+
+<h3>View Demo Site:</h3>
+<p>https://immense-island-22576.herokuapp.com/</p>
